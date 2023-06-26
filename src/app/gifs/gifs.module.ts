@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { ShearchBoxComponent } from './components/shearch-box/shearch-box.component';
 import { CardListComponent } from './components/card-list/card-list.component';
-import { GifsService } from './services/gifs.service';
+import { GifsCardComponent } from './components/card/card.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -11,10 +12,12 @@ import { GifsService } from './services/gifs.service';
   declarations: [
     HomePageComponent,
     ShearchBoxComponent,
-    CardListComponent
+    CardListComponent,
+    GifsCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports:[
     HomePageComponent,
